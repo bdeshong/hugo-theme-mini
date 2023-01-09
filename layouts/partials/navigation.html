@@ -12,7 +12,7 @@
 		<a href="{{ $element.path }}">{{ $element.name }}</a>
 	{{ end }}
 
-	{{ if .Site.Params.enableRSS }}
+	{{ if .Site.Params.enableRSSButton }}
 	  <a class="button" href="{{ .Site.RSSLink }}">{{ with .Site.Params.subscribe }}{{ . }}{{ else }}{{ i18n "subscribe" }}{{ end }}</a>
 	{{ end }}
 </nav>
