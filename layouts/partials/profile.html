@@ -12,4 +12,8 @@
     {{ with .Site.Params.Bio }}
       <h2>{{ . | markdownify }}</h2>
     {{ end }}
+
+    {{ if .Site.Social }}
+        {{ partial "social.html" . }}
+    {{ end }}
 </header>
